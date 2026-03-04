@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Diego Ferreiro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PFlexboxFerreiroDiego.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">Diego Ferreiro</h1>
+
+            <ul class="menu">
+                <li><a href="#sobre">Sobre mí</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#skills">Conocimientos</a></li>
+                <li><a href="#proyectos">Prácticas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Desarrollador Web en formación</h2>
+            <p>HTML • CSS • Java • Redes • Packet Tracer</p>
+            <a href="#proyectos" class="btn">Ver proyectos</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="sobre">
+            <article>
+                <h2>Sobre mí</h2>
+                <p>
+                    Estudiante de informática en el Liceo la Paz en Coruña, apasionado por el desarrollo web,
+                    las redes, la creación de soluciones tecnológicas prácticas y en busca de nuevos retos.
+                </p>
+            </article>
+        </section>
+
+        <section id="formacion" class="formacion">
+            <h2>Formación académica</h2>
+
+            <div class="flex-cards">
+
+                <article class="card">
+                    <h3>Bachillerato</h3>
+                    <p>Graduado en 2025 en el IES de Pastoriza</p>
+                </article>
+
+                <article class="card">
+                    <h3>DAW</h3>
+                    <p>Desarrollo de Aplicaciones Web</p>
+                </article>
+
+                <article class="card">
+                    <h3>Cursos extra</h3>
+                    <p>GitHub, Linux, Packet Tracer</p>
+                </article>
+
+            </div>
+        </section>
+        <section id="experiencia" class="experiencia">
+            <h2>Experiencia</h2>
+            <div class="experiencia-contenedor">
+                <article class="exp-card">
+                    <h3 class="exp-titulo">Desarrollador Frontend Junio</h3>
+                    <p class="exp-desc">Apoyo en la parte visual de aplicaciones | 2023</p>
+                </article>
+
+                <article class="exp-card">
+                    <h3 class="exp-titulo">QA Tester</h3>
+                    <p class="exp-desc">Tester de aplicaciones en fase de prueba | 2024</p>
+                </article>
+            </div>
+        </section>
+        <section id="habilidades" class="habilidades">
+            <h2>Habilidades e idiomas</h2>
+            <div class="habilidades-contenedor">
+                <span class="badge">Inglés (B2)</span>
+                <span class="badge">Trabajo en equipo</span>
+                <span class="badge">Adaptabilidad</span>
+                <span class="badge">Comunicación</span>
+                <span class="badge">Resolución de problemas</span>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Conocimientos técnicos</h2>
+            <div class="skills-contenedor">
+                <article class="skill">
+                    <div class="skill-info">
+                        <span>Java</span>
+                    <span>55%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso p65"></div>
+                    </div>
+                </article>
+                <article class="skill">
+                    <div class="skill-info">
+                        <span>HTML5 / CSS / Flexbox</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso p90"></div>
+                    </div>
+                </article>
+                <article class="skill">
+                    <div class="skill-info">
+                        <span>Montaje de Hardware</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso p95"></div>
+                    </div>
+                </article>
+                <article class="skill">
+                    <div class="skill-info">
+                        <span>SQL / Bases de datos</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso p60"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="proyectos" class="proyectos">
+            <h2>Mis prácticas</h2>
+
+            <div class="flex-proyectos">
+                <article class="proyecto">
+                    <img src="Imagenes/Lapiz.jpg" alt="Prueba Lapiz">
+                    <h3>Practica Lapiz</h3>
+                    <a href="https://github.com/diegof192006/ExamenLapiz">GitHub</a>
+                </article>
+
+                <article class="proyecto">
+                    <img src="Imagenes/HundirFlota.jpg" alt="Hundir la flota">
+                    <h3>Hundir la flota</h3>
+                    <a href="https://github.com/diegof192006/HundirLaFlota">GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form class="formulario" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
+            </form>
+        </section>
+    </section>
+    </main>
+    <footer class="footer">
+        <a href="https://github.com/diegof192006" target="_blank" class="github-link">GitHub</a>
+        <p>© 2026 Diego Ferreiro</p>
+    </footer>
+</body>
+</html>
