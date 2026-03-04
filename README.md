@@ -1,13 +1,29 @@
-# PFlexboxFerreiroDiego
+# Portfolio Personal - Flexbox
+
 ## Autor
 Diego Ferreiro Couceiro
 
 ## Descripción
-Portafolio personal desarrollado con HTML5 y CSS3 usando Flexbox.
-Incluye secciones de presentación, formación, experiencia, habilidades, conocimientos técnicos y contacto.
+Este proyecto, para la asignatura de lenguaje de marcas, consiste en el desarrollo de un portafolio web personal utilizando HTML y CSS con Flexbox para la maquetación.
 
-## Tecnologías
-- HTML
-- CSS
+La página incluye:
+- Presentación personal
+- Formación académica
+- Conocimientos técnicos
+- Experiencia
+- Habilidades
+- Proyectos/prácticas
+- Formulario de contacto
+
+## Características
+- Diseño moderno
+- Uso de Flexbox
+- Hover effects
+- Formulario de contacto
+- Código validado y ordenado
+
+## Tecnologías utilizadas
+- HTML5
+- CSS3
 - Flexbox
 - Responsive Design
