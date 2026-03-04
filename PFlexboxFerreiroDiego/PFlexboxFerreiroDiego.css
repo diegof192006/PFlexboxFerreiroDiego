@@ -1,0 +1,466 @@
+/* ================= VARIABLES ================= */
+/* Colores principales reutilizables */
+:root {
+    --primario: #2563eb;
+    --oscuro: #0f172a;
+    --gris: #64748b;
+    --claro: #f1f5f9;
+    --blanco: #ffffff;
+}
+
+
+/* ================= RESET ================= */
+/* Elimina márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+/* Configura tipografía y fondo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--claro);
+    color: var(--oscuro);
+    scroll-behavior: smooth;
+}
+
+
+/* ================= HEADER HERO ================= */
+/* Fondo degradado y centrado */
+.header {
+    background: linear-gradient(135deg, var(--primario), #1e40af);
+    color: var(--blanco);
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* ================= NAV ================= */
+/* Barra superior con flex */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+
+/* ================= MENÚ ================= */
+/* Lista horizontal */
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+
+/* ================= ENLACES MENÚ ================= */
+/* Estilo limpio */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* ================= HOVER MENÚ ================= */
+/* Subrayado animado */
+.menu a:hover {
+    opacity: 0.7;
+}
+
+
+/* ================= HERO TEXTO ================= */
+/* Centrado vertical */
+.hero {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+
+/* ================= BOTÓN PRINCIPAL ================= */
+/* Botón moderno */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: white;
+    color: var(--primario);
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* ================= HOVER BOTÓN ================= */
+/* Efecto elevación */
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ================= SECCIONES ================= */
+/* Espaciado amplio */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+
+/* ================= CONTENEDOR FLEX CARDS ================= */
+/* Tarjetas en fila adaptable */
+.flex-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+/* ================= CARD ================= */
+/* Tarjeta blanca con sombra */
+.card {
+    background: var(--blanco);
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+
+/* ================= HOVER CARD ================= */
+/* Elevación */
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ================= CONTENEDOR PROYECTOS ================= */
+/* Flexbox adaptable */
+.flex-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+
+/* ================= TARJETA PROYECTO ================= */
+/* Diseño tipo tarjeta moderna */
+.proyecto {
+    background: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+
+/* ================= IMAGEN PROYECTO ================= */
+/* Imagen adaptable */
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* ================= CONTENIDO PROYECTO ================= */
+/* Espaciado interno */
+.proyecto h3,
+.proyecto a {
+    padding: 12px;
+}
+
+
+/* ================= ENLACE PROYECTO ================= */
+/* Botón azul */
+.proyecto a {
+    background: var(--primario);
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ================= HOVER PROYECTO ================= */
+/* Elevación */
+.proyecto:hover {
+    transform: translateY(-10px);
+}
+
+
+/* ================= FOOTER ================= */
+/* Pie oscuro */
+.footer {
+    background: var(--oscuro);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* ================= ENLACE GITHUB FOOTER ================= */
+/* Estilo del enlace del footer */
+.github-link {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+/* ================= HOVER GITHUB ================= */
+/* Cambio visual al pasar el ratón */
+.github-link:hover {
+    color: var(--primario);
+}
+
+
+
+/* ================= SECCIÓN CONTACTO ================= */
+/* Fondo claro y centrado */
+.contacto {
+    background-color: var(--claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ================= FORMULARIO ================= */
+/* Contenedor vertical con ancho limitado */
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+/* ================= CAMPO INDIVIDUAL ================= */
+/* Agrupa label + input en columna */
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+
+/* ================= INPUTS Y TEXTAREA ================= */
+/* Estilo moderno con bordes redondeados */
+.campo input,
+.campo textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+
+/* ================= FOCUS INPUTS ================= */
+/* Resalta el campo activo */
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--primario);
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+
+/* ================= BOTÓN ENVIAR ================= */
+/* Botón grande azul */
+.btn-enviar {
+    background-color: var(--primario);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* ================= HOVER BOTÓN ================= */
+/* Efecto elevación */
+.btn-enviar:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* ================= SECCIÓN SKILLS ================= */
+/* Fondo claro y centrado */
+.skills {
+    background-color: white;
+}
+
+
+/* ================= CONTENEDOR SKILLS ================= */
+/* Flexbox adaptable con varias columnas */
+.skills-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+/* ================= TARJETA SKILL ================= */
+/* Caja blanca con sombra igual que el resto del portfolio */
+.skill {
+    background: var(--blanco);
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* ================= INFO SKILL ================= */
+/* Alinea texto y porcentaje en extremos */
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+
+/* ================= BARRA BASE ================= */
+/* Fondo gris de la barra */
+.barra {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* ================= PROGRESO INTERNO ================= */
+/* Parte coloreada de la barra */
+.progreso {
+    height: 100%;
+    background-color: var(--primario);
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+
+/* ================= PORCENTAJES ================= */
+/* Define el ancho de cada progreso */
+.p65 { width: 55%; }
+.p90 { width: 60%; }
+.p95 { width: 75%; }
+.p60 { width: 60%; }
+
+/* ================= SECCIÓN EXPERIENCIA ================= */
+/* Fondo claro igual al resto de secciones */
+.experiencia {
+    background-color: var(--claro);
+}
+
+
+/* ================= CONTENEDOR EXPERIENCIA ================= */
+/* Distribuye tarjetas en columna centrada */
+.experiencia-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+}
+
+
+/* ================= TARJETA EXPERIENCIA ================= */
+/* Caja blanca moderna con sombra */
+.exp-card {
+    background: var(--blanco);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    text-align: left;
+    border-left: 6px solid var(--primario);
+    transition: 0.3s;
+}
+
+
+/* ================= HOVER EXPERIENCIA ================= */
+/* Elevación suave al pasar el ratón */
+.exp-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* ================= TÍTULO EXPERIENCIA ================= */
+/* Destaca el puesto */
+.exp-titulo {
+    color: var(--primario);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+/* ================= DESCRIPCIÓN EXPERIENCIA ================= */
+/* Texto secundario */
+.exp-desc {
+    color: var(--gris);
+    font-size: 14px;
+}
+
+/* ================= SECCIÓN HABILIDADES ================= */
+/* Fondo blanco para diferenciar visualmente */
+.habilidades {
+    background-color: var(--blanco);
+}
+
+
+/* ================= CONTENEDOR HABILIDADES ================= */
+/* Flexbox adaptable con varias filas */
+.habilidades-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+/* ================= BADGE / CHIP ================= */
+/* Caja pequeña tipo etiqueta moderna */
+.badge {
+    background-color: var(--claro);
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    cursor: default;
+}
+
+
+/* ================= HOVER BADGE ================= */
+/* Efecto moderno al pasar el ratón */
+.badge:hover {
+    background-color: var(--primario);
+    color: white;
+    transform: translateY(-4px);
+}
